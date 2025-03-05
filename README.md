@@ -27,7 +27,7 @@ docker compose up -d --force-recreate
 To access the PostgreSQL database container, run:
 
 ```bash
-docker exec -it painkiller-db bash
+docker exec -it stock-db bash
 ```
 
 ### 4. Connect to PostgreSQL
@@ -59,7 +59,7 @@ ALTER USER painkiller CREATEDB;
 Navigate to the backend directory:
 
 ```bash
-docker exec -it painkiller-backend sh
+docker exec -it stock-backend sh
 ```
 
 Run the following commands:
