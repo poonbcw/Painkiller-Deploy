@@ -34,7 +34,7 @@ services:
     networks:
       - stock-net
     environment:
-      - NGINX_PROXY=http://${PROJECT_NAME}-backend:3003
+      - NGINX_PROXY=http://${PROJECT_NAME}-backend:5003
       - NGINX_PORT=${FRONTEND_PORT}
 volumes:
   stock-data:
