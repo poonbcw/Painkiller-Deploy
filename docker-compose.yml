@@ -3,6 +3,8 @@ services:
   postgres:
     image: postgres:16-alpine
     container_name: ${PROJECT_NAME}-db 
+    ports:
+      - ${POSTGRES_PORT}:5432
     volumes:
       - stock-data:/var/lib/postgresql/data
     environment:
